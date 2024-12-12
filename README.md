@@ -1,6 +1,5 @@
-## Very much WIP! Only basics here right now
-
-# openrct2-docker
+# Very much WIP! Only basics here right now
+## openrct2-docker
 A hacked together solution to get openrct2 running on my server in a docker container
 
 Clone the repository into the directory you want to run the container in.
