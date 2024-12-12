@@ -1,0 +1,15 @@
+# version: '3.8'
+
+services:
+  openrct2-cli:
+    build:
+      context: .
+      args:
+        USERNAME: $USER # Set this to be the same user as you run the container under
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    container_name: openrct2-docker
+    volumes:
+      - ./data:/home/$USER/data # Set this to be the same user as you run the container under
+      - ./config:/home/$USER/.config/OpenRCT2 # Set this to be the same user as you run the container under
+    tty: true
